@@ -1,0 +1,79 @@
+.voice_states {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li[data-userid="411916947773587456"].voice_state { display:none; } /* Tira o bot */
+
+li.voice_state .voice_avatar  { /* Default */
+  content: url("https://i.imgur.com/ycfMp4H.gif");
+  border-radius: 0% !important;
+  height: 200px !important;
+  width: 200px !important;
+  filter: brightness(0.2);
+}
+
+li.wrapper_speaking .voice_avatar { /* Default */
+  border-color: rgba(0, 0, 0, 0) !important;
+  position: relative;
+  animation-name: speak-now;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  filter: brightness(1);
+  content: url("https://i.imgur.com/x40SycE.gif");
+}
+
+
+/* Setting all profile pictures */
+li[data-userid="408804721835507723"].voice_state .voice_avatar, li[data-userid="408804721835507723"].wrapper_speaking .voice_avatar { /* Mancini */
+  content: url("https://i.imgur.com/OM3HcIc.png") !important;
+}
+
+li[data-userid="748567016927133696"].voice_state .voice_avatar, li[data-userid="748567016927133696"].wrapper_speaking .voice_avatar { /* Doug */
+  content: url("https://i.imgur.com/F9latRF.png") !important;
+}
+
+li[data-userid="338171804809953281"].voice_state .voice_avatar, li[data-userid="338171804809953281"].wrapper_speaking .voice_avatar { /* Willian */
+  content: url("https://i.imgur.com/AjyzsHm.png") !important;
+}
+
+li[data-userid="501568065348042755"].voice_state .voice_avatar, li[data-userid="501568065348042755"].wrapper_speaking .voice_avatar { /* Dayana */
+  content: url("https://i.imgur.com/HheaP6z.png") !important;
+}
+
+li[data-userid="1062090238106812576"].voice_state .voice_avatar, li[data-userid="1062090238106812576"].wrapper_speaking .voice_avatar { /* Dayana */
+  content: url("https://i.imgur.com/HheaP6z.png") !important;
+}
+
+li[data-userid="151101671265533952"].voice_state .voice_avatar, li[data-userid="151101671265533952"].wrapper_speaking .voice_avatar { /* Augusto */
+  content: url("https://i.imgur.com/Onf9m98.png") !important;
+}
+
+li[data-userid="507330590467424257"].voice_state .voice_avatar, li[data-userid="507330590467424257"].wrapper_speaking .voice_avatar { /* Eu */
+  content: url("https://i.imgur.com/KagmMoT.png") !important;
+}
+
+li[data-userid="1050396245505609768"].voice_state .voice_avatar, li[data-userid="1050396245505609768"].wrapper_speaking .voice_avatar { /* Eu */
+  content: url("https://i.imgur.com/KagmMoT.png") !important;
+}
+
+@keyframes speak-now {
+  0% {
+    bottom: 0px;
+  }
+  15% {
+    bottom: 10px;
+  }
+  30% {
+    bottom: 0px;
+  }
+}
+
+li.voice_state {
+  position: static;
+}
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
