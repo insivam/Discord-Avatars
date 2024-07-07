@@ -3,8 +3,6 @@
   justify-content: flex-end;
 }
 
-li[data-userid="411916947773587456"].voice_state { display:none; } /* Tira o bot */
-
 li.voice_state .voice_avatar  { /* Default */
   content: url("https://i.imgur.com/ycfMp4H.gif");
   border-radius: 0% !important;
@@ -23,37 +21,52 @@ li.wrapper_speaking .voice_avatar { /* Default */
   content: url("https://i.imgur.com/x40SycE.gif");
 }
 
-
 /* Setting all profile pictures */
+li[data-userid="411916947773587456"].voice_state .voice_avatar, li[data-userid="411916947773587456"].wrapper_speaking .voice_avata { /* Music bot */
+  content: url("https://i.imgur.com/p4XYBU4.gif") !important;
+  position: absolute;
+  left: 0;
+  transform: scaleX(-1);
+  filter: brightness(1);
+}
+
+li[data-userid="756663579196784843"].voice_state .voice_avatar { /* Jeni */
+  content: url("https://i.imgur.com/jdAFVcB.png") !important;
+}
+
+li[data-userid="756663579196784843"].wrapper_speaking .voice_avatar { /* Jeni speaking*/
+  content: url("https://i.imgur.com/Y4R2Op7.gif") !important;
+}
+
 li[data-userid="408804721835507723"].voice_state .voice_avatar, li[data-userid="408804721835507723"].wrapper_speaking .voice_avatar { /* Mancini */
   content: url("https://i.imgur.com/OM3HcIc.png") !important;
 }
 
-li[data-userid="748567016927133696"].voice_state .voice_avatar, li[data-userid="748567016927133696"].wrapper_speaking .voice_avatar { /* Doug */
+li[data-userid="748567016927133696"].voice_state .voice_avatar, li[data-userid="1252234396082372642"].voice_state .voice_avatar { /* Doug */
   content: url("https://i.imgur.com/F9latRF.png") !important;
+}
+
+li[data-userid="748567016927133696"].wrapper_speaking .voice_avatar, li[data-userid="1252234396082372642"].wrapper_speaking .voice_avatar { /* Doug speaking */
+  content: url("https://i.imgur.com/qirD8R0.gif") !important;
 }
 
 li[data-userid="338171804809953281"].voice_state .voice_avatar, li[data-userid="338171804809953281"].wrapper_speaking .voice_avatar { /* Willian */
   content: url("https://i.imgur.com/AjyzsHm.png") !important;
 }
 
-li[data-userid="501568065348042755"].voice_state .voice_avatar, li[data-userid="501568065348042755"].wrapper_speaking .voice_avatar { /* Dayana */
+li[data-userid="501568065348042755"].voice_state .voice_avatar, li[data-userid="1062090238106812576"].voice_state .voice_avatar { /* Dayana */
   content: url("https://i.imgur.com/HheaP6z.png") !important;
 }
 
-li[data-userid="1062090238106812576"].voice_state .voice_avatar, li[data-userid="1062090238106812576"].wrapper_speaking .voice_avatar { /* Dayana */
-  content: url("https://i.imgur.com/HheaP6z.png") !important;
+li[data-userid="501568065348042755"].wrapper_speaking .voice_avatar, li[data-userid="1062090238106812576"].wrapper_speaking .voice_avatar { /* Dayana speaking*/
+  content: url("https://i.imgur.com/JWNPNmH.gif") !important;
 }
 
 li[data-userid="151101671265533952"].voice_state .voice_avatar, li[data-userid="151101671265533952"].wrapper_speaking .voice_avatar { /* Augusto */
   content: url("https://i.imgur.com/Onf9m98.png") !important;
 }
 
-li[data-userid="507330590467424257"].voice_state .voice_avatar, li[data-userid="507330590467424257"].wrapper_speaking .voice_avatar { /* Eu */
-  content: url("https://i.imgur.com/KagmMoT.png") !important;
-}
-
-li[data-userid="1050396245505609768"].voice_state .voice_avatar, li[data-userid="1050396245505609768"].wrapper_speaking .voice_avatar { /* Eu */
+li[data-userid="507330590467424257"].voice_state .voice_avatar, li[data-userid="1050396245505609768"].voice_state .voice_avatar { /* Eu */
   content: url("https://i.imgur.com/KagmMoT.png") !important;
 }
 
